@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+</head>
+
+<body>
+    <!-- --------------------------------------------------------------navbar--------------------------------------------------------- -->
+    <div class="mainnaav container-fluid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="mainnav">
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <div
+                        class="mainicon rounded-circle me-3 overflow-hidden d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-utensils fa-xl" style="color: rgb(255, 255, 255);"></i>
+                    </div>
+                    <div>
+                        <h1 class="p-0 m-0">What's For Dinner</h1>
+                        <p class="subspan p-0 m-0">Your daily meal inspiration</p>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <i class="fa-solid fa-bookmark fa-lg"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-clock-rotate-left fa-lg"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-gear fa-lg"></i></a>
+                        </li>
+                    </ul>
+                    <div class="profile rounded-circle ms-lg-3 overflow-hidden "><img src="./images/avatar-4.jpg" alt=""
+                            class="w-100 rounded-circle"></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- -----------------------------------------------------------recipy producer ------------------------------------------------------------- -->
+    <section class="container-fluid min-vh-100 pt-3">
+        <div class="container row bg-info-subtle h-100 m-auto rounded-5 p-3">
+            <div class=" h-100 col-12 col-lg-5 leftside  h-100 rounded-start-5 position-relative overflow-hidden p-0">
+                <img class="foodpic vh-100" src="./images/Chicken Stir-Fry.png" alt="">
+                <div id="ratings" class="ratings rounded-pill p-2 bg-white position-absolute pe-4 ps-4">
+                    <i class="fa-solid fa-star " style="color: rgb(255, 212, 59);"></i>
+                    <span class="ratings1span1">4.5</span>
+                    <span class="ratings1span2">(324 reviews)</span>
+                </div>
+
+                <div id="summary"
+                    class="p-4 row bg-white rounded-4 position-absolute w-75 m-auto d-flex align-items-center">
+                    <div class="col-4 d-flex align-items-center flex-column gap-2">
+                        <div class=""><i class="fa-solid fa-clock fa-xl" style="color: #ff6900;"></i></div>
+                        <div class="d-flex align-items-center flex-column">
+                            <div class="subspan m-0 p-0">Prep Time</div>
+                            <div class=" ratings1span1 m-0 p-0">15 min</div>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex align-items-center flex-column gap-2">
+                        <div class=""><i class="fa-solid fa-fire-burner fa-xl" style="color: #fb2c36;"></i></div>
+                        <div class="d-flex align-items-center flex-column">
+                            <div class="subspan m-0 p-0">Prep Time</div>
+                            <div class=" ratings1span1 m-0 p-0">15 min</div>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex align-items-center flex-column gap-2">
+                        <div class=""><i class="fa-solid fa-users fa-xl" style="color: #2b7fff;"></i></div>
+                        <div class="d-flex align-items-center flex-column">
+                            <div class="subspan m-0 p-0">Prep Time</div>
+                            <div class=" ratings1span1 m-0 p-0">15 min</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div
+                class="col-12 col-lg-7 rightside rounded-end-5 p-4 d-flex flex-column justify-content-between gap-3 vh-100">
+                <div class="d-flex flex-column gap-3">
+                    <div class="d-flex gap-3">
+                        <span id="badg1" class="dificultytagp badge rounded-pill ps-3 pe-3">Easy</span>
+                        <span id="badg2" class="dishfromtagp badge rounded-pill ps-3 pe-3">Italian</span>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-between">
+                        <div>
+                            <h2>Caprese Sandwich</h2>
+                            <p class="h2subspan">Fresh Italian sandwich with mozzarella, tomato, and basil</p>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <div class="badgtag rounded-3 d-flex justify-content-center align-items-center"><i
+                                    class="fa-solid fa-bookmark fa-lg" style="color: #FF6900"></i></div>
+                            <div class="badgtag rounded-3 d-flex justify-content-center align-items-center"><i
+                                    class="fa-solid fa-diagram-project fa-lg" style="color: #FF6900;"></i></div>
+                        </div>
+                    </div>
+                    <div class="warning w-100 p-2 rounded-3 d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-triangle-exclamation fa-lg" style="color: #fb2c36;"></i>
+                        <div>
+                            <p>Extended Preparation Time</p>
+                            <span>This recipe requires more than 45 minutes to prepare. Plan accordingly!</span>
+                        </div>
+                    </div>
+                    <nav>
+                        <div class="nav nav-tabs bg-transparent " id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-Ingredients-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-Ingredients" type="button" role="tab"
+                                aria-controls="nav-Ingredients" aria-selected="true">
+                                <i class="fa-solid fa-list-check "></i>
+                                <h3>Ingredients</h3>
+                            </button>
+                            <button class="nav-link" id="nav-Instructions-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-Instructions" type="button" role="tab"
+                                aria-controls="nav-Instructions" aria-selected="false"><i
+                                    class="fa-brands fa-leanpub "></i>
+                                <h3>Instructions</h3>
+                            </button>
+                            <button class="nav-link" id="nav-Nutrition-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-Nutrition" type="button" role="tab" aria-controls="nav-Nutrition"
+                                aria-selected="false"><i class="fa-solid fa-chart-pie"></i>
+                                <h3>Nutrition</h3>
+                            </button>
+                            <button class="nav-link" id="nav-Tips-tab" data-bs-toggle="tab" data-bs-target="#nav-Tips"
+                                type="button" role="tab" aria-controls="nav-Tips" aria-selected="false"><i
+                                    class="fa-solid fa-chart-pie"></i>
+                                <h3>Nutrition</h3>
+
+                            </button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-Ingredients" role="tabpanel"
+                            aria-labelledby="nav-Ingredients-tab" tabindex="0">
+                            <div class="d-flex justify-content-start align-items-center gap-4">
+                                <div class="ingnumber rounded-circle d-flex">
+                                    <p>1</p>
+                                </div>
+                                <p>1 large romaine lettuce</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-Instructions" role="tabpanel"
+                            aria-labelledby="nav-Instructions-tab" tabindex="0">
+                            <div class="d-flex justify-content-start align-items-center gap-4">
+                                <div class="Instnumber rounded-3 d-flex">
+                                    <p>1</p>
+                                </div>
+                                <p>Wash and dry romaine lettuce thoroughly. Tear into bite-sized pieces.</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-Nutrition" role="tabpanel"
+                            aria-labelledby="nav-Nutrition-tab" tabindex="0">
+                            <div class=" d-flex flex-row flex-wrap gap-2 ">
+                                <div class="nutinfo p-3">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <div
+                                            class="ntcon ntcon1 rounded-3 d-flex justify-content-center align-items-center">
+                                            <i class="fa-solid fa-fire fa-lg" style="color: #f54a00;"></i>
+                                        </div>
+                                        <p class="nutritionp">Calories</p>
+                                    </div>
+                                    <p class="nutritionspan">320 kcal</p>
+                                </div>
+                                <div class="nutinfo p-3">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <div
+                                            class="ntcon ntcon2 rounded-3 d-flex justify-content-center align-items-center">
+                                            <i class="fa-solid fa-dumbbell fa-lg" style="color: #f54a00;"></i>
+                                        </div>
+                                        <p class="nutritionp">Protein</p>
+                                    </div>
+                                    <p class="nutritionspan">26g</p>
+                                </div>
+                                <div class="nutinfo p-3">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <div
+                                            class="ntcon ntcon3 rounded-3 d-flex justify-content-center align-items-center">
+                                            <i class="fa-solid fa-wheat-awn fa-lg" style="color: #f54a00;"></i>
+                                        </div>
+                                        <p class="nutritionp">Carbohydrates</p>
+                                    </div>
+                                    <p class="nutritionspan">32g</p>
+                                </div>
+                                <div class="nutinfo p-3">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <div
+                                            class="ntcon ntcon4 rounded-3 d-flex justify-content-center align-items-center">
+                                            <i class="fa-solid fa-droplet fa-lg" style="color: #f54a00;"></i>
+                                        </div>
+                                        <p class="nutritionp">Fat</p>
+                                    </div>
+                                    <p class="nutritionspan">20g</p>
+                                </div>
+                                <div class="nutinfo p-3">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <div
+                                            class="ntcon ntcon5 rounded-3 d-flex justify-content-center align-items-center">
+                                            <i class="fa-solid fa-seedling fa-lg" style="color: #f54a00;"></i>
+                                        </div>
+                                        <p class="nutritionp">Fiber</p>
+                                    </div>
+                                    <p class="nutritionspan">4g</p>
+                                </div>
+                                <div class="nutinfo p-3">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <div
+                                            class="ntcon ntcon6 rounded-3 d-flex justify-content-center align-items-center">
+                                            <i class="fa-solid fa-cube fa-lg" style="color: #f54a00;"></i>
+                                        </div>
+                                        <p class="nutritionp">Sodium</p>
+                                    </div>
+                                    <p class="nutritionspan">780mg</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-Tips" role="tabpanel" aria-labelledby="nav-Tips-tab"
+                            tabindex="0">
+                            <div class=" tpscncnr d-flex flex-column w-100">
+                                <div class="tps rounded-4 p-3 d-flex justify-content-start align-items-center gap-2">
+                                <i class="fa-solid fa-circle-check fa-lg" style="color: #f54a00;"></i>
+                                    <p>Don't oversoak noodles or they'll be mushy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button id="pichriciby" class=" rounded-3 d-flex align-items-center justify-content-center gap-3 "><i
+                        class="fa-solid fa-arrows-rotate fa-lg" style="color: white;"></i> Try Another Recipe</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- -------------------------------------------------------Scripts------------------------------------------ -->
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
+
+
