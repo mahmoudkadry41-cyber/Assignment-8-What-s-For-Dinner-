@@ -54,11 +54,11 @@
     <section class="container-fluid min-vh-100 pt-3">
         <div class="container row bg-info-subtle h-100 m-auto rounded-5 p-3">
             <div class=" h-100 col-12 col-lg-5 leftside  h-100 rounded-start-5 position-relative overflow-hidden p-0">
-                <img class="foodpic vh-100" src="./images/Chicken Stir-Fry.png" alt="">
+                <img id="dishimg" class="foodpic vh-100" src="./images/Chicken Stir-Fry.png" alt="">
                 <div id="ratings" class="ratings rounded-pill p-2 bg-white position-absolute pe-4 ps-4">
                     <i class="fa-solid fa-star " style="color: rgb(255, 212, 59);"></i>
-                    <span class="ratings1span1">4.5</span>
-                    <span class="ratings1span2">(324 reviews)</span>
+                    <span id="rating" class="ratings1span1">4.5</span>
+                    <span id="reviews" class="ratings1span2">(324 reviews)</span>
                 </div>
 
                 <div id="summary"
@@ -67,21 +67,21 @@
                         <div class=""><i class="fa-solid fa-clock fa-xl" style="color: #ff6900;"></i></div>
                         <div class="d-flex align-items-center flex-column">
                             <div class="subspan m-0 p-0">Prep Time</div>
-                            <div class=" ratings1span1 m-0 p-0">15 min</div>
+                            <div id="prepTime" class=" ratings1span1 m-0 p-0">15 min</div>
                         </div>
                     </div>
                     <div class="col-4 d-flex align-items-center flex-column gap-2">
                         <div class=""><i class="fa-solid fa-fire-burner fa-xl" style="color: #fb2c36;"></i></div>
                         <div class="d-flex align-items-center flex-column">
-                            <div class="subspan m-0 p-0">Prep Time</div>
-                            <div class=" ratings1span1 m-0 p-0">15 min</div>
+                            <div class="subspan m-0 p-0">cook time</div>
+                            <div id="cookTime" class=" ratings1span1 m-0 p-0">15 min</div>
                         </div>
                     </div>
                     <div class="col-4 d-flex align-items-center flex-column gap-2">
                         <div class=""><i class="fa-solid fa-users fa-xl" style="color: #2b7fff;"></i></div>
                         <div class="d-flex align-items-center flex-column">
-                            <div class="subspan m-0 p-0">Prep Time</div>
-                            <div class=" ratings1span1 m-0 p-0">15 min</div>
+                            <div class="subspan m-0 p-0">Servings</div>
+                            <div id="serves" class=" ratings1span1 m-0 p-0">15 min</div>
                         </div>
                     </div>
                 </div>
@@ -96,8 +96,8 @@
                     </div>
                     <div class="d-flex align-items-start justify-content-between">
                         <div>
-                            <h2>Caprese Sandwich</h2>
-                            <p class="h2subspan">Fresh Italian sandwich with mozzarella, tomato, and basil</p>
+                            <h2 id="dishname">Caprese Sandwich</h2>
+                            <p class="h2subspan" id="dishdiscription">Fresh Italian sandwich with mozzarella, tomato, and basil</p>
                         </div>
                         <div class="d-flex gap-2">
                             <div class="badgtag rounded-3 d-flex justify-content-center align-items-center"><i
@@ -106,9 +106,9 @@
                                     class="fa-solid fa-diagram-project fa-lg" style="color: #FF6900;"></i></div>
                         </div>
                     </div>
-                    <div class="warning w-100 p-2 rounded-3 d-flex align-items-center gap-3">
+                    <div id="timewarning" class="warning w-100 p-2 rounded-3 align-items-center gap-3 d-none">
                         <i class="fa-solid fa-triangle-exclamation fa-lg" style="color: #fb2c36;"></i>
-                        <div>
+                        <div class="">
                             <p>Extended Preparation Time</p>
                             <span>This recipe requires more than 45 minutes to prepare. Plan accordingly!</span>
                         </div>
@@ -135,7 +135,7 @@
                             <button class="nav-link" id="nav-Tips-tab" data-bs-toggle="tab" data-bs-target="#nav-Tips"
                                 type="button" role="tab" aria-controls="nav-Tips" aria-selected="false"><i
                                     class="fa-solid fa-chart-pie"></i>
-                                <h3>Nutrition</h3>
+                                <h3>Chef's Tips</h3>
 
                             </button>
                         </div>
@@ -152,11 +152,11 @@
                         </div>
                         <div class="tab-pane fade" id="nav-Instructions" role="tabpanel"
                             aria-labelledby="nav-Instructions-tab" tabindex="0">
-                            <div class="d-flex justify-content-start align-items-center gap-4">
+                            <div id="aninstruction" class="d-flex justify-content-start align-items-center gap-4">
                                 <div class="Instnumber rounded-3 d-flex">
-                                    <p>1</p>
+                                    <p id="insrrnumber">1</p>
                                 </div>
-                                <p>Wash and dry romaine lettuce thoroughly. Tear into bite-sized pieces.</p>
+                                <p id="instrinstr">Wash and dry romaine lettuce thoroughly. Tear into bite-sized pieces.</p>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="nav-Nutrition" role="tabpanel"
@@ -170,7 +170,7 @@
                                         </div>
                                         <p class="nutritionp">Calories</p>
                                     </div>
-                                    <p class="nutritionspan">320 kcal</p>
+                                    <p class="nutritionspan" id="Calories">320 kcal</p>
                                 </div>
                                 <div class="nutinfo p-3">
                                     <div class="d-flex gap-2 align-items-center">
@@ -180,7 +180,7 @@
                                         </div>
                                         <p class="nutritionp">Protein</p>
                                     </div>
-                                    <p class="nutritionspan">26g</p>
+                                    <p class="nutritionspan" id="Protein">26g</p>
                                 </div>
                                 <div class="nutinfo p-3">
                                     <div class="d-flex gap-2 align-items-center">
@@ -190,7 +190,7 @@
                                         </div>
                                         <p class="nutritionp">Carbohydrates</p>
                                     </div>
-                                    <p class="nutritionspan">32g</p>
+                                    <p class="nutritionspan" id="Carbohydrates">32g</p>
                                 </div>
                                 <div class="nutinfo p-3">
                                     <div class="d-flex gap-2 align-items-center">
@@ -200,7 +200,7 @@
                                         </div>
                                         <p class="nutritionp">Fat</p>
                                     </div>
-                                    <p class="nutritionspan">20g</p>
+                                    <p class="nutritionspan" id="Fat">20g</p>
                                 </div>
                                 <div class="nutinfo p-3">
                                     <div class="d-flex gap-2 align-items-center">
@@ -210,7 +210,7 @@
                                         </div>
                                         <p class="nutritionp">Fiber</p>
                                     </div>
-                                    <p class="nutritionspan">4g</p>
+                                    <p class="nutritionspan" id="Fiber">4g</p>
                                 </div>
                                 <div class="nutinfo p-3">
                                     <div class="d-flex gap-2 align-items-center">
@@ -220,7 +220,7 @@
                                         </div>
                                         <p class="nutritionp">Sodium</p>
                                     </div>
-                                    <p class="nutritionspan">780mg</p>
+                                    <p class="nutritionspan" id="Sodium">780mg</p>
                                 </div>
                             </div>
                         </div>
