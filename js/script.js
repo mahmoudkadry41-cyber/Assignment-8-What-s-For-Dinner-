@@ -1508,8 +1508,7 @@ document.getElementById("timewarning").classList.add("d-none");
 
   document.getElementById("Calories").innerHTML = dish[randumdish].nutrition.Calories;
   document.getElementById("Protein").innerHTML = dish[randumdish].nutrition.Protein;
-  document.getElementById("Carbohydrates").innerHTML =
-    dish[0].nutrition.Carbohydrates;
+  document.getElementById("Carbohydrates").innerHTML = dish[randumdish].nutrition.Carbohydrates;
   document.getElementById("Fat").innerHTML = dish[randumdish].nutrition.Fat;
   document.getElementById("Fiber").innerHTML = dish[randumdish].nutrition.Fiber;
   document.getElementById("Sodium").innerHTML =
