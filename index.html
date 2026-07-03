@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="./css/breackpoints.css">
 </head>
 
 <body>
     <!-- --------------------------------------------------------------navbar--------------------------------------------------------- -->
-    <div class="mainnaav container-fluid">
+    <div class="mainnaav container-fluid ">
         <nav class="navbar navbar-expand-lg bg-body-tertiary" id="mainnav">
             <div class="container">
                 <div class="d-flex align-items-center">
@@ -31,7 +32,7 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <div class="collapse navbar-collapse pb-3 " id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">
@@ -51,19 +52,19 @@
         </nav>
     </div>
     <!-- -----------------------------------------------------------recipy producer ------------------------------------------------------------- -->
-    <section class="container-fluid min-vh-100 pt-3">
-        <div class="container row bg-info-subtle h-100 m-auto rounded-5 p-3">
+    <section class="container-fluid min-vh-100 pt-3 toolcontainer">
+        <div class="container row h-100 m-auto rounded-5 p-3 maincntnr bg-white">
             <div class=" h-100 col-12 col-lg-5 leftside  h-100 rounded-start-5 position-relative overflow-hidden p-0">
                 <img id="dishimg" class="foodpic vh-100" src="./images/Chicken Stir-Fry.png" alt="">
-                <div id="ratings" class="ratings rounded-pill p-2 bg-white position-absolute pe-4 ps-4">
+                <div id="ratings" class="ratings rounded-pill p-2 position-absolute pe-4 ps-4 bg-white">
                     <i class="fa-solid fa-star " style="color: rgb(255, 212, 59);"></i>
                     <span id="rating" class="ratings1span1">4.5</span>
                     <span id="reviews" class="ratings1span2">(324 reviews)</span>
                 </div>
 
                 <div id="summary"
-                    class="p-4 row bg-white rounded-4 position-absolute w-75 m-auto d-flex align-items-center">
-                    <div class="col-4 d-flex align-items-center flex-column gap-2">
+                    class=" btmsdinfo p-4 row bg-white rounded-4 position-absolute w-75 m-auto d-flex align-items-center">
+                    <div class="col-4 d-flex align-items-center flex-column gap-2 das12">
                         <div class=""><i class="fa-solid fa-clock fa-xl" style="color: #ff6900;"></i></div>
                         <div class="d-flex align-items-center flex-column">
                             <div class="subspan m-0 p-0">Prep Time</div>
@@ -77,7 +78,7 @@
                             <div id="cookTime" class=" ratings1span1 m-0 p-0">15 min</div>
                         </div>
                     </div>
-                    <div class="col-4 d-flex align-items-center flex-column gap-2">
+                    <div class="col-4 d-flex align-items-center flex-column gap-2 dsaasd">
                         <div class=""><i class="fa-solid fa-users fa-xl" style="color: #2b7fff;"></i></div>
                         <div class="d-flex align-items-center flex-column">
                             <div class="subspan m-0 p-0">Servings</div>
@@ -114,7 +115,7 @@
                         </div>
                     </div>
                     <nav>
-                        <div class="nav nav-tabs bg-transparent " id="nav-tab" role="tablist">
+                        <div class="nav nav-tabs bg-transparent d-flex justify-content-center  " id="nav-tab" role="tablist">
                             <button class="nav-link active" id="nav-Ingredients-tab" data-bs-toggle="tab"
                                 data-bs-target="#nav-Ingredients" type="button" role="tab"
                                 aria-controls="nav-Ingredients" aria-selected="true">

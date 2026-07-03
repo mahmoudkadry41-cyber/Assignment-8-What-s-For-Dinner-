@@ -97,6 +97,7 @@ h3,
 .mainnaav nav {
   height: 5.375rem;
   box-shadow: 0 0.125rem 0.25rem #ffedd4;
+  z-index: 999;
 }
 .profile {
   width: 3rem;
@@ -141,6 +142,12 @@ h3,
 
 /* ------------------------------------------------------rightside----------------------------------------------------- */
 
+.toolcontainer{
+  background-color: #FFF9EC;
+}
+.maincntnr{
+  border: 1px #FFEDD4 solid;
+}
 #badg1 {
   background-color: #dbfce7;
 }
@@ -168,6 +175,7 @@ h3,
   gap: 5px;
   width: 10.375rem;
   color: #4a5565;
+width: 137px !important;
 
 }
 
@@ -200,14 +208,16 @@ h3,
     transform: none;
 }
 .rightside .tab-pane{
-    background-color: #FFF9EC;
     padding: .9375rem;
     min-height: 15rem;
-    max-height: 20rem;
-    overflow-y: scroll;
-      scrollbar-width: thin;                
+    max-height: 18rem;
+    overflow-y: auto;
+    scrollbar-width: thin;                
     scrollbar-color: #FFDBD2 #FFFFFF;    
     border-radius: 1.5625rem; 
+}
+#nav-Ingredients{
+  background-color: #FFF9EC;
 }
 
 
@@ -239,14 +249,21 @@ h3,
    
 }
 .Instnumber{
-    width: 3rem;
-    height: 3rem;
+
     background-color: #FF6900;
     display: flex;
     align-items: center;
     justify-content: center;
    
 }
+#insrrnumber{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    width: 3rem;
+    height: 3rem;
+}
+
 .ingnumber p{
     font-size: .75rem !important;
     font-weight: 700 !important;
@@ -324,3 +341,15 @@ p{
     line-height: 20px;
     color: oklch(0.577 0.245 27.325);
 }
+
+.btmsdinfo{
+  text-align: center !important;
+  align-items: start !important;
+}
+
+
+.das12{
+  align-items: center !important;
+
+}
+
